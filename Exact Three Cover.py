@@ -12,6 +12,8 @@ if len(s) % 3 != 0:
 
 c = [[4,5,7],[1,2,8],[5,0,9],[1,2,3],[1,2,4],[1,2,5],[4,5,6],[1,2,7],[1,4,5]]
 
+mul_log = len(c)
+
 ss = s
 
 # Sort list to remove
@@ -124,6 +126,5 @@ while True:
           # answer.
           c = list(reversed(c))
           random.shuffle(c)
-    if stop >= length * 3:
+    if stop >= length * mul_log:
         break
-
